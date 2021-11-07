@@ -11,6 +11,5 @@ WORKDIR /k8-cockroach
 
 COPY create-certs.sh .
 RUN chmod a+x ./create-certs.sh
-RUN ./create-certs.sh
 
-ENTRYPOINT /bin/sh
+CMD ./create-certs.sh
